@@ -46,11 +46,11 @@
 		388404B2ECB8241D094E17FDF087EF07 /* FYContactUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYContactUtil-prefix.pch"; sourceTree = "<group>"; };
 		39A45EA4CCF8D5D9CBD5F24E457B08C9 /* Pods-FYContactUtil_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FYContactUtil_Tests.modulemap"; sourceTree = "<group>"; };
 		3C5FD8482F053582A7C9D5381E843E1C /* Pods-FYContactUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		417CBC487578BE836920C13D30E65775 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4A7EA5082DC007D438253491139696B0 /* Pods-FYContactUtil_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FYContactUtil_Tests"; path = Pods_FYContactUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		417CBC487578BE836920C13D30E65775 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4A7EA5082DC007D438253491139696B0 /* Pods_FYContactUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYContactUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53009EC852C24ED42FB3124C3DB6F66D /* Pods-FYContactUtil_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYContactUtil_Tests-dummy.m"; sourceTree = "<group>"; };
-		5464D7992408070241E9A1BF65407E9A /* FYContactUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FYContactUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5907B163E1D940BB2D8D7D20C10AF270 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5464D7992408070241E9A1BF65407E9A /* FYContactUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FYContactUtil.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		5907B163E1D940BB2D8D7D20C10AF270 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5B0D7A80048CEF41E19DA2750BFCEE4E /* Pods-FYContactUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7556CE7C75AB0A448FF916B99D6B5A65 /* Pods-FYContactUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		79012C2CEAF2EAB73AB90C225A24B604 /* Pods-FYContactUtil_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYContactUtil_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		8EDE19F0F7AFF27EA9C1D1C3E8AAF565 /* Pods-FYContactUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FYContactUtil_Example.modulemap"; sourceTree = "<group>"; };
 		8F5D13FADEA16107CAA5D8B3D7BEA9B8 /* FYContactUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYContactUtil.m; path = FYContactUtil/Classes/FYContactUtil.m; sourceTree = "<group>"; };
 		9D091B3B09C31F94778DD3DA4506AC08 /* Pods-FYContactUtil_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYContactUtil_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A125078C73427A171BB7ED276D1E8AF0 /* FYContactUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYContactUtil.debug.xcconfig; sourceTree = "<group>"; };
 		B2612A92ED9A58AF4A69CE9625A2F94D /* FYContactUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYContactUtil.release.xcconfig; sourceTree = "<group>"; };
 		B30AAFE57805A2801E7A7B57E06AD780 /* Pods-FYContactUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYContactUtil_Example-dummy.m"; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		BE4B350292207B3E13E097D96E7A7092 /* Pods-FYContactUtil_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FYContactUtil_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0BCDC21EA9F999649F92A850F83D562 /* FYContactUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FYContactUtil-Info.plist"; sourceTree = "<group>"; };
 		C160D04718D07A11C936B290EA20723E /* Pods-FYContactUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FYContactUtil; path = FYContactUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B70DB3FF41599702D2F95C0BF82419 /* Pods-FYContactUtil_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FYContactUtil_Example"; path = Pods_FYContactUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FYContactUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B70DB3FF41599702D2F95C0BF82419 /* Pods_FYContactUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYContactUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67A360FDAAB621ACD006F571F7F86EB /* Pods-FYContactUtil_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYContactUtil_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E386D96D74B77508C346E842233C72CA /* FYContactUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYContactUtil-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,9 +130,9 @@
 		59432922E2843A900EA918AF726D0D24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil */,
-				D4B70DB3FF41599702D2F95C0BF82419 /* Pods-FYContactUtil_Example */,
-				4A7EA5082DC007D438253491139696B0 /* Pods-FYContactUtil_Tests */,
+				D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil.framework */,
+				D4B70DB3FF41599702D2F95C0BF82419 /* Pods_FYContactUtil_Example.framework */,
+				4A7EA5082DC007D438253491139696B0 /* Pods_FYContactUtil_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			);
 			name = "Pods-FYContactUtil_Tests";
 			productName = Pods_FYContactUtil_Tests;
-			productReference = 4A7EA5082DC007D438253491139696B0 /* Pods-FYContactUtil_Tests */;
+			productReference = 4A7EA5082DC007D438253491139696B0 /* Pods_FYContactUtil_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2E03DB95878BB8D2ADF3242459295671 /* FYContactUtil */ = {
@@ -291,7 +291,7 @@
 			);
 			name = FYContactUtil;
 			productName = FYContactUtil;
-			productReference = D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil */;
+			productReference = D2645E3A481391E08ACB046D1D83A383 /* FYContactUtil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CC35F64AC92FA41C002C62A76A467A28 /* Pods-FYContactUtil_Example */ = {
@@ -310,7 +310,7 @@
 			);
 			name = "Pods-FYContactUtil_Example";
 			productName = Pods_FYContactUtil_Example;
-			productReference = D4B70DB3FF41599702D2F95C0BF82419 /* Pods-FYContactUtil_Example */;
+			productReference = D4B70DB3FF41599702D2F95C0BF82419 /* Pods_FYContactUtil_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -331,8 +331,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 59432922E2843A900EA918AF726D0D24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -573,8 +571,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
