@@ -7,6 +7,7 @@
 //
 
 #import "FYViewController.h"
+#import "FYContactUtil.h"
 
 @interface FYViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    FYContactUtil *contactUtil = [[FYContactUtil alloc] init];
+    [contactUtil requestContactsAuthorization:NO completion:^(BOOL result, FYContactsAuthStatus status, BOOL alertShow) {
+        
+        NSLog(@"结果--%ld---状态%ld---展示提示框%ld",result,status,alertShow);
+                
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FYContactUtil.h"
 
 FOUNDATION_EXPORT double FYContactUtilVersionNumber;
 FOUNDATION_EXPORT const unsigned char FYContactUtilVersionString[];

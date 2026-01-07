@@ -59,14 +59,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		60A6B19AEA39133F3CB635C8 /* FYContactUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FYContactUtil.podspec; path = ../FYContactUtil.podspec; sourceTree = "<group>"; };
+		60A6B19AEA39133F3CB635C8 /* FYContactUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FYContactUtil.podspec; path = ../FYContactUtil.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FD9CF0A96789C468651A2B2 /* Pods-FYContactUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYContactUtil_Example.debug.xcconfig"; path = "Target Support Files/Pods-FYContactUtil_Example/Pods-FYContactUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AB428FAA8AD3E4BC1B116A8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB428FAA8AD3E4BC1B116A8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DB2922BB833F32CF6BE8B6E9 /* Pods_FYContactUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYContactUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC81B707C43A8E8E8E447409 /* Pods-FYContactUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYContactUtil_Example.release.xcconfig"; path = "Target Support Files/Pods-FYContactUtil_Example/Pods-FYContactUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E6A63C2424A7D16C05602FBF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E6A63C2424A7D16C05602FBF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				29DFC42C582094E00FD64B9F /* Pods-FYContactUtil_Tests.debug.xcconfig */,
 				4493D4C7D46889FB809EA17C /* Pods-FYContactUtil_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
