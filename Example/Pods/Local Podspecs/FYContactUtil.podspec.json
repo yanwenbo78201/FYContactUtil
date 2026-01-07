@@ -1,0 +1,22 @@
+{
+  "name": "FYContactUtil",
+  "version": "0.1.0",
+  "summary": "A short description of FYContactUtil.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Computer/FYContactUtil",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Computer": "yanwenbo@Computer.com"
+  },
+  "source": {
+    "git": "https://github.com/Computer/FYContactUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "FYContactUtil/Classes/**/*"
+}

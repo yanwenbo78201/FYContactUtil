@@ -1,0 +1,16 @@
+PODS:
+  - FYContactUtil (0.1.0)
+
+DEPENDENCIES:
+  - FYContactUtil (from `../`)
+
+EXTERNAL SOURCES:
+  FYContactUtil:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FYContactUtil: ffe3f9b4265999931860c4bb959358a71080af58
+
+PODFILE CHECKSUM: 536d8a0388c777ccfd60e1283d238cf15a6d5f15
+
+COCOAPODS: 1.16.2
