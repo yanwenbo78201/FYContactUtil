@@ -10,6 +10,15 @@
 #import <AddressBook/AddressBook.h>
 
 @implementation FYContactUtil
+
++ (instancetype)sharedInstance {
+    static FYContactUtil *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[FYContactUtil alloc] init];
+    });
+    return instance;
+}
 - (void)requestContactsAuthorization:(BOOL)required completion:(void(^)(BOOL result, FYContactsAuthStatus status, BOOL shouldShowAlert))completion {
     
     FYContactsAuthStatus currentStatus = [self currentContactsAuthStatus];
@@ -97,20 +106,20 @@
     }
 }
 
-- (NSArray *)contactListWithLimitCount:(NSInteger)limitCount batchSize:(NSInteger)batchSize {
-    NSArray *allContacts = [self validContacts];
+- (NSArray<NSArray<NSDictionary<NSString *, id> *> *> *)contactListWithLimitCount:(NSInteger)limitCount batchSize:(NSInteger)batchSize {
+    NSArray<NSDictionary<NSString *, id> *> *allContacts = [self validContacts];
     // 如果联系人数据长度超过limitCount，进行截取
     if (allContacts.count > limitCount) {
         allContacts = [allContacts subarrayWithRange:NSMakeRange(0, limitCount)];
     }
     
     // 根据batchSize分组
-    NSMutableArray *groupedArray = [NSMutableArray array];
+    NSMutableArray<NSArray<NSDictionary<NSString *, id> *> *> *groupedArray = [NSMutableArray array];
     NSInteger totalCount = allContacts.count;
     
     for (NSInteger i = 0; i < totalCount; i += batchSize) {
         NSInteger endIndex = MIN(i + batchSize, totalCount);
-        NSArray *subArray = [allContacts subarrayWithRange:NSMakeRange(i, endIndex - i)];
+        NSArray<NSDictionary<NSString *, id> *> *subArray = [allContacts subarrayWithRange:NSMakeRange(i, endIndex - i)];
         [groupedArray addObject:subArray];
     }
     
@@ -119,19 +128,19 @@
 
 #pragma mark - Contacts Data Processing Methods
 
-- (NSArray *)validContacts {
-    NSArray *allContacts = [self allContacts];
-    NSMutableArray *validContacts = [NSMutableArray array];
-    NSMutableArray *processedPhones = [[NSMutableArray alloc] init];
+- (NSArray<NSDictionary<NSString *, id> *> *)validContacts {
+    NSArray<NSDictionary<NSString *, id> *> *allContacts = [self allContacts];
+    NSMutableArray<NSDictionary<NSString *, id> *> *validContacts = [NSMutableArray array];
+    NSMutableArray<NSString *> *processedPhones = [[NSMutableArray alloc] init];
     
-    for (NSDictionary *contactDict in allContacts) {
+    for (NSDictionary<NSString *, id> *contactDict in allContacts) {
         NSString *contactName = [self extractContactNameFromDict:contactDict];
         
         if (contactName.length == 0) {
             continue;
         }
         
-        NSArray *phoneArray = [contactDict objectForKey:@"phoneArray"];
+        NSArray<NSString *> *phoneArray = [contactDict objectForKey:@"phoneArray"];
         [self processContactPhones:phoneArray
                         contactName:contactName
                         contactDict:contactDict
@@ -142,19 +151,19 @@
     return validContacts;
 }
 
-- (NSArray *)allContacts {
+- (NSArray<NSDictionary<NSString *, id> *> *)allContacts {
     if (![self isContactsAccessAuthorized]) {
         return @[];
     }
     
-    NSMutableArray *allContacts = [NSMutableArray array];
+    NSMutableArray<NSDictionary<NSString *, id> *> *allContacts = [NSMutableArray array];
     ABAddressBookRef addressBook = ABAddressBookCreate();
     CFArrayRef contactsArray = ABAddressBookCopyArrayOfAllPeople(addressBook);
     long contactsCount = CFArrayGetCount(contactsArray);
     
     for (int i = 0; i < contactsCount; i++) {
         ABRecordRef personRecord = CFArrayGetValueAtIndex(contactsArray, i);
-        NSDictionary *contactDict = [self extractContactInfoFromRecord:personRecord];
+        NSDictionary<NSString *, id> *contactDict = [self extractContactInfoFromRecord:personRecord];
         [allContacts addObject:contactDict];
     }
     
@@ -175,18 +184,18 @@
     }
 }
 
-- (NSString *)extractContactNameFromDict:(NSDictionary *)contactDict {
+- (NSString *)extractContactNameFromDict:(NSDictionary<NSString *, id> *)contactDict {
     NSString *firstName = [contactDict objectForKey:@"firstName"] ?: @"";
     NSString *lastName = [contactDict objectForKey:@"lastName"] ?: @"";
     NSString *fullName = [NSString stringWithFormat:@"%@ %@", lastName, firstName];
     return [fullName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
-- (void)processContactPhones:(NSArray *)phoneArray
+- (void)processContactPhones:(NSArray<NSString *> *)phoneArray
                  contactName:(NSString *)contactName
-                 contactDict:(NSDictionary *)contactDict
-               validContacts:(NSMutableArray *)validContacts
-             processedPhones:(NSMutableArray *)processedPhones {
+                 contactDict:(NSDictionary<NSString *, id> *)contactDict
+               validContacts:(NSMutableArray<NSDictionary<NSString *, id> *> *)validContacts
+             processedPhones:(NSMutableArray<NSString *> *)processedPhones {
     
     for (NSString *phoneStr in phoneArray) {
         NSString *cleanedPhone = [self cleanPhoneNumber:phoneStr];
@@ -197,7 +206,7 @@
             if (![processedPhones containsObject:formattedPhone]) {
                 [processedPhones addObject:formattedPhone];
                 
-                NSDictionary *contactInfo = [self createContactInfo:contactName
+                NSDictionary<NSString *, id> *contactInfo = [self createContactInfo:contactName
                                                          phoneNumber:formattedPhone
                                                          contactDict:contactDict];
                 [validContacts addObject:contactInfo];
@@ -236,9 +245,9 @@
     return formattedPhone;
 }
 
-- (NSDictionary *)createContactInfo:(NSString *)contactName
+- (NSDictionary<NSString *, id> *)createContactInfo:(NSString *)contactName
                         phoneNumber:(NSString *)phoneNumber
-                        contactDict:(NSDictionary *)contactDict {
+                        contactDict:(NSDictionary<NSString *, id> *)contactDict {
     
     NSDate *contactDate = [contactDict objectForKey:@"alterTime"];
     NSString *contactUpdateTime = @"";
@@ -258,8 +267,8 @@
     };
 }
 
-- (NSDictionary *)extractContactInfoFromRecord:(ABRecordRef)personRecord {
-    NSMutableDictionary *contactDict = [NSMutableDictionary new];
+- (NSDictionary<NSString *, id> *)extractContactInfoFromRecord:(ABRecordRef)personRecord {
+    NSMutableDictionary<NSString *, id> *contactDict = [NSMutableDictionary new];
     
     // 提取姓名
     NSString *firstName = (__bridge NSString *)(ABRecordCopyValue(personRecord, kABPersonFirstNameProperty));
@@ -268,7 +277,7 @@
     [contactDict setValue:lastName forKey:@"lastName"];
     
     // 提取电话号码
-    NSMutableArray *phoneList = [self extractPhoneNumbersFromRecord:personRecord];
+    NSMutableArray<NSString *> *phoneList = [self extractPhoneNumbersFromRecord:personRecord];
     [contactDict setValue:phoneList forKey:@"phoneArray"];
     
     // 提取时间信息
@@ -280,8 +289,8 @@
     return contactDict;
 }
 
-- (NSMutableArray *)extractPhoneNumbersFromRecord:(ABRecordRef)personRecord {
-    NSMutableArray *phoneList = [[NSMutableArray alloc] init];
+- (NSMutableArray<NSString *> *)extractPhoneNumbersFromRecord:(ABRecordRef)personRecord {
+    NSMutableArray<NSString *> *phoneList = [[NSMutableArray alloc] init];
     ABMultiValueRef phones = ABRecordCopyValue(personRecord, kABPersonPhoneProperty);
     
     for (NSInteger j = 0; j < ABMultiValueGetCount(phones); j++) {

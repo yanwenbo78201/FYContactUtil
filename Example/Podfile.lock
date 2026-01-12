@@ -1,5 +1,5 @@
 PODS:
-  - FYContactUtil (0.1.0)
+  - FYContactUtil (0.1.1)
 
 DEPENDENCIES:
   - FYContactUtil (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FYContactUtil: ffe3f9b4265999931860c4bb959358a71080af58
+  FYContactUtil: 0cccd6e002a3e4b05ae1cdc2faf346294b38fd05
 
 PODFILE CHECKSUM: 536d8a0388c777ccfd60e1283d238cf15a6d5f15
 
