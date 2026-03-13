@@ -9,6 +9,13 @@
 #import "FYContactUtil.h"
 #import <AddressBook/AddressBook.h>
 
+typedef enum : NSUInteger {
+    AddressBookTypeIndia,
+    AddressBookTypePH
+} AddressBookType;
+@interface FYContactUtil()
+@property (nonatomic, assign) AddressBookType addressBookType;
+@end
 @implementation FYContactUtil
 
 + (instancetype)sharedInstance {
@@ -16,6 +23,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[FYContactUtil alloc] init];
+        instance.addressBookType = AddressBookTypeIndia;
     });
     return instance;
 }
@@ -107,6 +115,28 @@
 }
 
 - (NSArray<NSArray<NSDictionary<NSString *, id> *> *> *)contactListWithLimitCount:(NSInteger)limitCount batchSize:(NSInteger)batchSize {
+    self.addressBookType = AddressBookTypeIndia;
+    NSArray<NSDictionary<NSString *, id> *> *allContacts = [self validContacts];
+    // 如果联系人数据长度超过limitCount，进行截取
+    if (allContacts.count > limitCount) {
+        allContacts = [allContacts subarrayWithRange:NSMakeRange(0, limitCount)];
+    }
+    
+    // 根据batchSize分组
+    NSMutableArray<NSArray<NSDictionary<NSString *, id> *> *> *groupedArray = [NSMutableArray array];
+    NSInteger totalCount = allContacts.count;
+    
+    for (NSInteger i = 0; i < totalCount; i += batchSize) {
+        NSInteger endIndex = MIN(i + batchSize, totalCount);
+        NSArray<NSDictionary<NSString *, id> *> *subArray = [allContacts subarrayWithRange:NSMakeRange(i, endIndex - i)];
+        [groupedArray addObject:subArray];
+    }
+    
+    return groupedArray;
+}
+
+- (NSArray<NSArray<NSDictionary<NSString *, id> *> *> *)contactListPHWithLimitCount:(NSInteger)limitCount batchSize:(NSInteger)batchSize {
+    self.addressBookType = AddressBookTypePH;
     NSArray<NSDictionary<NSString *, id> *> *allContacts = [self validContacts];
     // 如果联系人数据长度超过limitCount，进行截取
     if (allContacts.count > limitCount) {
@@ -227,16 +257,18 @@
 }
 
 - (BOOL)isValidPhoneNumber:(NSString *)phoneNumber {
-    NSPredicate *phonePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^(91[6-9]\\d{9}|910[6-9]\\d{9}|[6-9]\\d{9}|0[6-9]\\d{9})$"];
+    NSPredicate *phonePredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", self.addressBookType == AddressBookTypeIndia ? @"^(91[6-9]\\d{9}|910[6-9]\\d{9}|[6-9]\\d{9}|0[6-9]\\d{9})$" : @"^(9\\d{9}|639\\d{9}|09\\d{9}|6309\\d{9})$"];
     return [phonePredicate evaluateWithObject:phoneNumber];
 }
 
 - (NSString *)formatPhoneNumber:(NSString *)phoneNumber {
     NSString *formattedPhone = phoneNumber;
+    NSString *threePrefix = self.addressBookType == AddressBookTypeIndia ? @"910" : @"630";
+    NSString *twoPrefix = self.addressBookType == AddressBookTypeIndia ? @"91" : @"63";
     
-    if (formattedPhone.length == 13 && [formattedPhone hasPrefix:@"910"]) {
+    if (formattedPhone.length == 13 && [formattedPhone hasPrefix:threePrefix]) {
         formattedPhone = [formattedPhone substringFromIndex:3];
-    } else if (formattedPhone.length == 12 && [formattedPhone hasPrefix:@"91"]) {
+    } else if (formattedPhone.length == 12 && [formattedPhone hasPrefix:twoPrefix]) {
         formattedPhone = [formattedPhone substringFromIndex:2];
     } else if (formattedPhone.length == 11 && [formattedPhone hasPrefix:@"0"]) {
         formattedPhone = [formattedPhone substringFromIndex:1];

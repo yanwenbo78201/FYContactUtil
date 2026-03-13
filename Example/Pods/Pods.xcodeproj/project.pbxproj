@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04D98E334D8ECECA08A5D7E950D03F55 /* FYContactUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DE8C245099B81C3E9B5CAB8585803 /* FYContactUtil-dummy.m */; };
-		31C6E795C784F82ECC66D98DD95A1639 /* FYContactUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E386D96D74B77508C346E842233C72CA /* FYContactUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D7FC3501E841E34ABBCF0C8B8ECF413 /* FYContactUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B630B80869CC5577F44CBB19F041D54C /* FYContactUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		353E746ECD5E360CA7956F48AE639C43 /* FYContactUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E386D96D74B77508C346E842233C72CA /* FYContactUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50887754BB9874ABE41B6D11A6DBC65F /* Pods-FYContactUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B30AAFE57805A2801E7A7B57E06AD780 /* Pods-FYContactUtil_Example-dummy.m */; };
-		935F0BDF44CD135CDBC248584790CA97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		52D8586570D1B0B8AB34C8D1D1D8C3E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C40529BD667CBD17B32A924D67751D5 /* Foundation.framework */; };
+		761B0567570CB24681536118FE76601E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7385FC65C978B603D1C491DC3395CB29 /* AddressBook.framework */; };
 		955E44F96C696DBFEB9F8C2DA68E1C04 /* Pods-FYContactUtil_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DDCC83DDC92F183CFC477D4F2FDBFB /* Pods-FYContactUtil_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2C25AAA211F6ECCDFCA22AABE98F03F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		977A3A5B83A65EBE077143549CF6BC63 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B5AF015DC0EB18E93F2AAA584BDA66 /* Contacts.framework */; };
+		A74675058DB5AADE9A0772B684B37D96 /* FYContactUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DE8C245099B81C3E9B5CAB8585803 /* FYContactUtil-dummy.m */; };
+		AA0AB6D68F6B38219773A42E56B6DDDC /* FYContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D13FADEA16107CAA5D8B3D7BEA9B8 /* FYContactUtil.m */; };
+		B2C25AAA211F6ECCDFCA22AABE98F03F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C40529BD667CBD17B32A924D67751D5 /* Foundation.framework */; };
 		C2813F331862839419C88F1EB8D1AF85 /* Pods-FYContactUtil_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53009EC852C24ED42FB3124C3DB6F66D /* Pods-FYContactUtil_Tests-dummy.m */; };
-		C4CEF4312F53D904CF87F2CCD798BEFC /* FYContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D13FADEA16107CAA5D8B3D7BEA9B8 /* FYContactUtil.m */; };
-		EB860ACDE1C8255C3EF52BB81016764B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		EB860ACDE1C8255C3EF52BB81016764B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C40529BD667CBD17B32A924D67751D5 /* Foundation.framework */; };
 		F5BF70B4D787A132BCC8E36CF1D5CA11 /* Pods-FYContactUtil_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79012C2CEAF2EAB73AB90C225A24B604 /* Pods-FYContactUtil_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD3A8C4A4A9CA0CE7F8AE336D1FE634 /* FYContactUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B630B80869CC5577F44CBB19F041D54C /* FYContactUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2974DC86574C448FD341F8728C39CAB3 /* PBXContainerItemProxy */ = {
+		70911712F5269141502F53CC363A431F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -38,11 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C40529BD667CBD17B32A924D67751D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		10DDCC83DDC92F183CFC477D4F2FDBFB /* Pods-FYContactUtil_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYContactUtil_Example-umbrella.h"; sourceTree = "<group>"; };
 		12B641C59B7DABB6A000B79E1B906D76 /* FYContactUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FYContactUtil.modulemap; sourceTree = "<group>"; };
 		18D6280784EC8FCED3257D18A2432B2B /* Pods-FYContactUtil_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYContactUtil_Tests-Info.plist"; sourceTree = "<group>"; };
 		1F0DE8C245099B81C3E9B5CAB8585803 /* FYContactUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FYContactUtil-dummy.m"; sourceTree = "<group>"; };
-		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		388404B2ECB8241D094E17FDF087EF07 /* FYContactUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYContactUtil-prefix.pch"; sourceTree = "<group>"; };
 		39A45EA4CCF8D5D9CBD5F24E457B08C9 /* Pods-FYContactUtil_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FYContactUtil_Tests.modulemap"; sourceTree = "<group>"; };
 		3C5FD8482F053582A7C9D5381E843E1C /* Pods-FYContactUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,7 +54,9 @@
 		5464D7992408070241E9A1BF65407E9A /* FYContactUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FYContactUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5907B163E1D940BB2D8D7D20C10AF270 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5B0D7A80048CEF41E19DA2750BFCEE4E /* Pods-FYContactUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7385FC65C978B603D1C491DC3395CB29 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		7556CE7C75AB0A448FF916B99D6B5A65 /* Pods-FYContactUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYContactUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
+		77B5AF015DC0EB18E93F2AAA584BDA66 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		79012C2CEAF2EAB73AB90C225A24B604 /* Pods-FYContactUtil_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYContactUtil_Tests-umbrella.h"; sourceTree = "<group>"; };
 		85BD98E76C7E0A9D686FDB3EDED72EA4 /* Pods-FYContactUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYContactUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8918EF6120189A7ED75C5EEFF00FD97B /* Pods-FYContactUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FYContactUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -75,11 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6BD282CDD60325D62D0EDE7E6D6AAACF /* Frameworks */ = {
+		3357D3BE3A302D0B26E7FC8CD1BF43CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F0BDF44CD135CDBC248584790CA97 /* Foundation.framework in Frameworks */,
+				761B0567570CB24681536118FE76601E /* AddressBook.framework in Frameworks */,
+				977A3A5B83A65EBE077143549CF6BC63 /* Contacts.framework in Frameworks */,
+				52D8586570D1B0B8AB34C8D1D1D8C3E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A291ABDC350F8FC1FE1A13FBCE71E3A9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39E10FB69E1DDE8B2DBE4266BA9A97B2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,23 +183,25 @@
 			path = "Example/Pods/Target Support Files/FYContactUtil";
 			sourceTree = "<group>";
 		};
+		A291ABDC350F8FC1FE1A13FBCE71E3A9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7385FC65C978B603D1C491DC3395CB29 /* AddressBook.framework */,
+				77B5AF015DC0EB18E93F2AAA584BDA66 /* Contacts.framework */,
+				0C40529BD667CBD17B32A924D67751D5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				ED1915A621F07AAE32E737710FE33A67 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				59432922E2843A900EA918AF726D0D24 /* Products */,
 				39E10FB69E1DDE8B2DBE4266BA9A97B2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E2F28336357E922DC83DC4E21386E801 /* Pod */ = {
@@ -196,14 +212,6 @@
 				417CBC487578BE836920C13D30E65775 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		ED1915A621F07AAE32E737710FE33A67 /* Development Pods */ = {
@@ -237,12 +245,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B658E982B2EDA4859A3105DCB04A08B /* Headers */ = {
+		629CFB96BB3D7F74AB7CC950D46EAE5B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7FC3501E841E34ABBCF0C8B8ECF413 /* FYContactUtil.h in Headers */,
-				31C6E795C784F82ECC66D98DD95A1639 /* FYContactUtil-umbrella.h in Headers */,
+				FFD3A8C4A4A9CA0CE7F8AE336D1FE634 /* FYContactUtil.h in Headers */,
+				353E746ECD5E360CA7956F48AE639C43 /* FYContactUtil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +277,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B8F067ADA2EBD103C770EBD964EB52E1 /* PBXTargetDependency */,
+				57E94A6337F7CAB514533B14E45BC0DA /* PBXTargetDependency */,
 			);
 			name = "Pods-FYContactUtil_Tests";
 			productName = Pods_FYContactUtil_Tests;
@@ -278,12 +286,12 @@
 		};
 		2E03DB95878BB8D2ADF3242459295671 /* FYContactUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE6796B1AEDCC32AA03B26DE116D01C5 /* Build configuration list for PBXNativeTarget "FYContactUtil" */;
+			buildConfigurationList = 4C2A970DA5EE5F47239861ADDF7FC282 /* Build configuration list for PBXNativeTarget "FYContactUtil" */;
 			buildPhases = (
-				8B658E982B2EDA4859A3105DCB04A08B /* Headers */,
-				A41FD3ECD4790A2821BE237D7DB7A772 /* Sources */,
-				6BD282CDD60325D62D0EDE7E6D6AAACF /* Frameworks */,
-				DBC1FCA7BCB9C5B8A1B309ED4C9C3FE3 /* Resources */,
+				629CFB96BB3D7F74AB7CC950D46EAE5B /* Headers */,
+				26C824D4C0F02723E3B3BFA10F3D7C00 /* Sources */,
+				3357D3BE3A302D0B26E7FC8CD1BF43CC /* Frameworks */,
+				9B2197481FB9C99D182B9AC91A688AC7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -352,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBC1FCA7BCB9C5B8A1B309ED4C9C3FE3 /* Resources */ = {
+		9B2197481FB9C99D182B9AC91A688AC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,12 +385,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A41FD3ECD4790A2821BE237D7DB7A772 /* Sources */ = {
+		26C824D4C0F02723E3B3BFA10F3D7C00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4CEF4312F53D904CF87F2CCD798BEFC /* FYContactUtil.m in Sources */,
-				04D98E334D8ECECA08A5D7E950D03F55 /* FYContactUtil-dummy.m in Sources */,
+				AA0AB6D68F6B38219773A42E56B6DDDC /* FYContactUtil.m in Sources */,
+				A74675058DB5AADE9A0772B684B37D96 /* FYContactUtil-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,57 +405,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		57E94A6337F7CAB514533B14E45BC0DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FYContactUtil_Example";
+			target = CC35F64AC92FA41C002C62A76A467A28 /* Pods-FYContactUtil_Example */;
+			targetProxy = 70911712F5269141502F53CC363A431F /* PBXContainerItemProxy */;
+		};
 		AD8F4A76450007F35D9589415231A284 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FYContactUtil;
 			target = 2E03DB95878BB8D2ADF3242459295671 /* FYContactUtil */;
 			targetProxy = 90964BC24227FF97B7A19428FE65CACC /* PBXContainerItemProxy */;
 		};
-		B8F067ADA2EBD103C770EBD964EB52E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FYContactUtil_Example";
-			target = CC35F64AC92FA41C002C62A76A467A28 /* Pods-FYContactUtil_Example */;
-			targetProxy = 2974DC86574C448FD341F8728C39CAB3 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BEDCBDF291A873C21664F54ADA05838 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2612A92ED9A58AF4A69CE9625A2F94D /* FYContactUtil.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FYContactUtil/FYContactUtil-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FYContactUtil/FYContactUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FYContactUtil/FYContactUtil.modulemap";
-				PRODUCT_MODULE_NAME = FYContactUtil;
-				PRODUCT_NAME = FYContactUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		430B2C4DE30CC8FFB4915A1A9E1D6527 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B0D7A80048CEF41E19DA2750BFCEE4E /* Pods-FYContactUtil_Tests.debug.xcconfig */;
@@ -483,6 +455,42 @@
 			};
 			name = Debug;
 		};
+		4422CF0337E4A3623FBABB5491C18A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2612A92ED9A58AF4A69CE9625A2F94D /* FYContactUtil.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FYContactUtil/FYContactUtil-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FYContactUtil/FYContactUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FYContactUtil/FYContactUtil.modulemap";
+				PRODUCT_MODULE_NAME = FYContactUtil;
+				PRODUCT_NAME = FYContactUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4F28E5F764D5AC23F40361272F257EB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C5FD8482F053582A7C9D5381E843E1C /* Pods-FYContactUtil_Example.debug.xcconfig */;
@@ -512,6 +520,41 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B6970871AC85807449E8B720E1434B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A125078C73427A171BB7ED276D1E8AF0 /* FYContactUtil.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FYContactUtil/FYContactUtil-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FYContactUtil/FYContactUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FYContactUtil/FYContactUtil.modulemap";
+				PRODUCT_MODULE_NAME = FYContactUtil;
+				PRODUCT_NAME = FYContactUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -579,41 +622,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		A9E25C679EAFA89239E1518378CB996A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A125078C73427A171BB7ED276D1E8AF0 /* FYContactUtil.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FYContactUtil/FYContactUtil-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FYContactUtil/FYContactUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FYContactUtil/FYContactUtil.modulemap";
-				PRODUCT_MODULE_NAME = FYContactUtil;
-				PRODUCT_NAME = FYContactUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B0711E8873CDE926470F078D16A77C67 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -765,20 +773,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4C2A970DA5EE5F47239861ADDF7FC282 /* Build configuration list for PBXNativeTarget "FYContactUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6970871AC85807449E8B720E1434B5 /* Debug */,
+				4422CF0337E4A3623FBABB5491C18A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8C5B6691F74982B45BFCC417750989ED /* Build configuration list for PBXNativeTarget "Pods-FYContactUtil_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				430B2C4DE30CC8FFB4915A1A9E1D6527 /* Debug */,
 				C26D3FABCEEAEEC97B5DD182F56AF932 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE6796B1AEDCC32AA03B26DE116D01C5 /* Build configuration list for PBXNativeTarget "FYContactUtil" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9E25C679EAFA89239E1518378CB996A /* Debug */,
-				0BEDCBDF291A873C21664F54ADA05838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

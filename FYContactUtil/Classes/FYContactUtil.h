@@ -45,6 +45,8 @@ NS_SWIFT_NAME(requestAuthorization(required:completion:));
                                                                           batchSize:(NSInteger)batchSize 
 NS_SWIFT_NAME(contactList(limitCount:batchSize:));
 
+- (NSArray<NSArray<NSDictionary<NSString *, id> *> *> *)contactListPHWithLimitCount:(NSInteger)limitCount batchSize:(NSInteger)batchSize NS_SWIFT_NAME(contactPHList(limitCount:batchSize:));
+
 @end
 
 NS_ASSUME_NONNULL_END

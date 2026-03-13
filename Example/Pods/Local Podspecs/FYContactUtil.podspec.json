@@ -1,6 +1,6 @@
 {
   "name": "FYContactUtil",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A short description of FYContactUtil.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yanwenbo78201/FYContactUtil",
@@ -13,10 +13,16 @@
   },
   "source": {
     "git": "https://github.com/yanwenbo78201/FYContactUtil.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "15.0"
   },
-  "source_files": "FYContactUtil/Classes/**/*"
+  "source_files": "FYContactUtil/Classes/**/*",
+  "public_header_files": "FYContactUtil/Classes/**/*.h",
+  "frameworks": [
+    "Foundation",
+    "Contacts",
+    "AddressBook"
+  ]
 }
